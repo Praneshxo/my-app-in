@@ -14,14 +14,153 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-weight: 10px;
+  font-family: monospace;
+  background-color: #FEEEF9;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(5px + 2vmin);
+  color: #104105;
+}
+.image{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    position:relative;
+    top:-100px;
+    left: -10px;
+}
+.home{
+  width: 100vh;
+  height: 100vh;
+}
+.line{
+  width: 30%;
+  height: 25%;
+  right: 570px;
+  rotate: 20px;
+  top: -25px;
+  position: absolute;
+  transform: rotate(10deg);
+}
+.left,.right{
+  opacity: 60%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #f39edf;
+  position: relative;
+  top: 360px;
+  left: 110px;
+}
+.right{
+  left: 900px;
+}
+.container{
+    width: 600px;
+    height: 300px;
+    border: 2px solid #9E278B;
+    padding: 50px;
+    position: relative;
+    top: 130px;
+    left: 600px;
+    border-radius: 26px;
+    box-shadow: 10px 10px #9E278B;
+}
+.name{
+  font-family: monospace;
+  font-size: 300%;
+  color: rgb(59, 26, 59);
+  position: relative;
+  margin-top: -290px;
+}
+.para{
+  font-size: 140%;
+  text-align: center;
+  color: rgb(225, 147, 213);
+  position: relative;
+  top: -20px;
+}
+.footer {
+  background-color: #f8d4e3;
+  padding: 40px 20px;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  margin-top: -70px;
+  margin-left: -130px;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 10px;
+  width: 70px;
+  height: 50px;
+  position: relative;
+  left: 140px;
+  top: 200px;
+}
+
+.footer-social-icons a {
+  color: #333;
+  font-size: 24px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #a03f89;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #666;
 }
 
 .App-link {
