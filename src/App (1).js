@@ -1,20 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
-import dataArray from './data';
 import React, { useState, useEffect } from 'react';
+import dataArray from './data';
 
 
 function MyComponent() {
-  const [data, setData] = useState({
-    image: './images/man1.jpg',
-    paragraph: 'Agape  Garden has been a fantastic choice for our son. He loves going to  school every day, thanks to the caring teachers and caregivers. Weve  seen great improvements in his social skills, activities, and academics.  Huge thanks to all the teachers, especially Angel Priya, Amala and  Anita for their exceptional dedication',
-    heading: 'Pranesh'
-  });
-
+  const dataArray = [
+    {
+      image: './images/man1.jpg',
+      paragraph: 'Agape  Garden has been a fantastic choice for our son. He loves going to  school every day, thanks to the caring teachers and caregivers. Weve  seen great improvements in his social skills, activities, and academics.  Huge thanks to all the teachers, especially Angel Priya, Amala and  Anita for their exceptional dedication.',
+      heading: 'Pranesh'
+    },
+    {
+      image: 'https://example.com/image2.jpg',
+      paragraph: 'Paragraph for image 2.',
+      heading: 'Heading 2'
+    },
+    // Add more data objects as needed
+  ];
+  
+  const [data, setData] = useState(dataArray[0]);
   const [index, setIndex] = useState(0);
 
   const handleClick = () => {
-    const newIndex = (index + 1) % data.length;
+    const newIndex = (index + 1) % dataArray.length;
+    setData(dataArray[newIndex]);
     setIndex(newIndex);
   };
 
@@ -37,7 +47,7 @@ function App() {
       </header>
       <div className='home'>
       <div className="navigation">
-          <button className='left' >◀</button>
+          <button className='left'  >◀</button>
           <button className='right' >▶</button>
         </div>
       <div className='containner'>
