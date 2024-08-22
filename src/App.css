@@ -16,7 +16,7 @@
 .App-header {
   font-weight: 10px;
   font-family: monospace;
-  background-color: #FEEEF9;
+  background-color: #ffd5f2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,15 +77,19 @@
   position: relative;
   margin-top: -290px;
 }
+.rating{
+  margin: 10px 0;
+  color: #ffdd57;
+}
 .para{
   font-size: 140%;
   text-align: center;
-  color: rgb(225, 147, 213);
+  color: rgb(167, 98, 156);
   position: relative;
   top: -20px;
 }
 .footer {
-  background-color: #f8d4e3;
+  background-color: #ffd5f2;
   padding: 40px 20px;
   color: #333;
 }
