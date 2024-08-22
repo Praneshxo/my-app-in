@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import MyComponent from './MyComponent';
 import './App.css';
-import dataArray from './data'; // Assuming your data is imported from data.js
+import dataArray from './data'; 
 
 function App() {
   const [index, setIndex] = useState(0);
